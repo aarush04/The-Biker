@@ -1,0 +1,60 @@
+.thebiker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#LW{
+    animation: rotatewheel 1.5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#RW{
+    animation: rotatewheel 1.5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes rotatewheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+#biker{
+    animation: updown 1s infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes updown{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+#Cap{
+    animation: bounce 1s infinite ease-in-out alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes bounce{
+    from{
+       transform: translateY(10px);
+    }
+    to{
+        transform: translateY(40px);
+    }
+}
+#backg{
+    animation: shift 1s infinite ease-in-out alternate;
+}
+@keyframes shift{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(30deg);
+    }
+}
